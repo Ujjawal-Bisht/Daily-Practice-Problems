@@ -14,6 +14,4 @@ Question 04: Write a program which accepts a sequence of comma-separated numbers
 """
 n = input("Enter numbers:- ").split(',')
 print(n)
-print(type(n))
-for i in n:
-    print(i,type(i))
+print(tuple(n))
