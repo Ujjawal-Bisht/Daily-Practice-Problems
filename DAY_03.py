@@ -9,6 +9,6 @@ h = 30
 q = list()
 d = input("Enter numbers:- ").split(',')
 for i in d:
-    q.append(str(math.sqrt((2*c*int(i))/h)))
-    print(','.join(q))
+    q.append(str(int(math.sqrt((2*c*int(i))/h))))
+print(','.join(q))
 
