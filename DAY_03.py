@@ -6,7 +6,9 @@ Question 06: Write a program that calculates and prints the value according to t
 import math
 c = 50
 h = 30
+q = list()
 d = input("Enter numbers:- ").split(',')
 for i in d:
-    q = math.sqrt((2*c*int(i))/h)
-    print(int(q) , end = ',')
+    q.append(math.sqrt((2*c*int(i))/h))
+    print(','.join(q))
+    
