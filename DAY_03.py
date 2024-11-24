@@ -4,3 +4,9 @@ Question 06: Write a program that calculates and prints the value according to t
 # q = sqrt((2*c*d)/h)
 
 import math
+c = 50
+h = 30
+d = input("Enter numbers:- ").split(',')
+for i in d:
+    q = math.sqrt((2*c*int(i))/h)
+    print(q,end = ',')
