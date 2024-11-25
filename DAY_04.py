@@ -15,4 +15,9 @@ ch = True
 while ch == True:
     n = input("Enter string:- ")
     print(n.upper())
-    ch = bool(input("Do you want to continue?(True/False) ").title())
+    ch = input("Do you want to continue?(True/False) ").title()
+    if  ch == "False":
+        ch = False
+    else:
+        ch = True
+    
