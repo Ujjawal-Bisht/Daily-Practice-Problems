@@ -17,6 +17,6 @@ Question 11: Write a program which accepts a sequence of comma separated 4 digit
 new_n = []
 n = input("Enter sequence:- ").split(',')
 for i in n:
-    if (int(i)%5 == 0):
+    if (int(i,2)%5 == 0):
         new_n.append(i)
 print(','.join(new_n))
