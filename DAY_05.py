@@ -5,6 +5,6 @@ Question 10: Write a program that accepts a sequence of whitespace separated wor
 """
 
 n = input("Enter sequence:- ").split(' ')
-sort(n)
 n = list(set(n))
+n.sort()
 print(' '.join(n))
