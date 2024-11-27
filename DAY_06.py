@@ -36,5 +36,3 @@ for i in n :
         sp += 1
 print("LETTERS", l)
 print("DIGITS", d)
-print("SPECIAL CHARACTERS", sp)
-print(len(n))
