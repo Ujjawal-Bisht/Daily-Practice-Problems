@@ -23,15 +23,18 @@ print(",".join(l))
 Question 13: Write a program that accepts a sentence and calculate the number of letters and digits. Suppose the following input is supplied to the program: hello world! 123 Then, the output should be: LETTERS 10 DIGITS 3
 """
 
-n = input(Enter sentence:- )
+n = input("Enter sentence:- ")
 d = 0
 l = 0
+sp = 0
 for i in n :
     if i.isdigit():
         d += 1
     elif i.isalpha():
         l += 1
     else:
-        continue
+        sp += 1
 print("LETTERS", l)
 print("DIGITS", d)
+print("SPECIAL CHARACTERS", sp)
+print(len(n))
