@@ -13,3 +13,5 @@ def even(num):
     return True
 
 for i in range(1000,3001,1):
+    if even(i):
+        print(i, end=',')
