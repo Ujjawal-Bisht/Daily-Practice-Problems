@@ -5,5 +5,6 @@ Question: Use a list comprehension to square each odd number in a list. The list
 """
 
 n = input("Enter sequence:- ").split(',')
-res = [n*n for i in n if i%2 != 0]
+n = map(int,n)
+res = [i*i for i in n if i%2 != 0]
 print(res)
