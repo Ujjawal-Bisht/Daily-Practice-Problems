@@ -16,3 +16,9 @@ Question 17: Write a program that computes the net amount of a bank account base
 
 n = input("Enter Transaction:- ").split(' ')
 net_amount = 0
+for  i in range(0,len(n),2):
+    if (n[i] == 'W'):
+        net_amount -= int(n[i+1])
+    else:
+        net_amount += int(n[i+1])
+print(net_amount)
