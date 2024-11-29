@@ -15,3 +15,4 @@ Question 17: Write a program that computes the net amount of a bank account base
 """
 
 n = input("Enter Transaction:- ").split(' ')
+net_amount = 0
