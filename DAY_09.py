@@ -22,16 +22,16 @@ def check_validity(password):
     for i in password:
         if (i.isupper()):
             u = True
-            break
+            continue
         if (i.islower()):
             l = True
-            break
+            continue
         if (i.isnumeric()):
             d = True
-            break
+            continue
         if (i in '@#$'):
             s = True
-            break
+            continue
 
 
 n = input("Enter password:- ").split(",")
