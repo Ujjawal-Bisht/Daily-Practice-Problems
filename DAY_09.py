@@ -10,10 +10,12 @@ At least 1 character from [$#@]
 Minimum length of transaction password: 6
 Maximum length of transaction password: 12 Your program should accept a sequence of comma separated passwords and will check them according to the above criteria. Passwords that match the criteria are to be printed, each separated by a comma. Example If the following passwords are given as input to the program: ABd1234@1,a F1#,2w3E*,2We3345 Then, the output of the program should be: ABd1234@1
 """
-
+u = False
+l =False
+d = False
+s = False
 n = input("Enter password:- ").split(",")
 for i in n :
     if (len(i) > 6 and len(i) < 12):
         for j in i:
             if ('a'<j and j<'z') or ('A'<j and j<'Z') or (j in '0123456789') or (j in "@#$") :
-                print(i)
