@@ -54,8 +54,8 @@ Question 19: You are required to write a program to sort the (name, age, height)
 """
 n = input("Enter tuple:- ").split(' ')
 l = list()
-print(n)
 for i in n:
     sub_l = i.split(',')
     l.append(tuple(sub_l))
+l.sort()
 print(l)
