@@ -12,3 +12,8 @@ Maximum length of transaction password: 12 Your program should accept a sequence
 """
 
 n = input("Enter password:- ").split(",")
+for i in n :
+    if (len(i) > 6 and len(i) < 12):
+        for j in i:
+            if ('a'<j and j<'z') or ('A'<j and j<'Z') or (j in '0123456789') or (j in "@#$") :
+                print(i)
