@@ -17,6 +17,9 @@ def check_validity(password):
     l =False
     d = False
     s = False
+    if (len(password)>6 and len(password)<12):
+        if True:
+            pass
 
 
 n = input("Enter password:- ").split(",")
