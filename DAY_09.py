@@ -20,3 +20,8 @@ def check_validity(password):
 
 
 n = input("Enter password:- ").split(",")
+for i in n:
+    if (check_validity(i) == True):
+        print(i)
+    else:
+        continue
